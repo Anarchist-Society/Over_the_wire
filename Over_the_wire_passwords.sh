@@ -1,15 +1,3 @@
-# level 7 -> level 8: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
-cat data.txt | grep "millionth"
-grep "millionth" data.txt
-
-# level 8 -> level 9: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
-sort data.txt | uniq --count | grep "^ *1 "
-sort data.txt | uniq --unique
-
-# level 9 -> level 10: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
-# Imprime secuencia de caracteres en ficheros
-strings data.txt | grep "======"
-
 # level 10 -> level 11: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 # base64 sirve para convertir datos binarios a ASCII y viceversa
 base64 --decode data.txt 

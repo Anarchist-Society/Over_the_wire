@@ -1,4 +1,4 @@
-# level 6 -> level 7: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+# Level 6 -> Level 7: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 find / -user 11007 -group 11006 -size 33c | grep "password"
 find / -user bandit7 -group bandit6 -size 33c | grep "password"
 # / ->  buscamos en todo el servidor
