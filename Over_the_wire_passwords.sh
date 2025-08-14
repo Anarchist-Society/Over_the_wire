@@ -1,7 +1,3 @@
-# level 4 -> level 5: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-cd inhere
-find ./*
-cat ./-file07
 
 # level 5 -> level 6: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 find /home/bandit5/inhere/ -type f -size 1033c ! -executable -exec file '{}' \; | grep "ASCII text"
