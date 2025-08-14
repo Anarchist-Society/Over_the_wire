@@ -1,12 +1,3 @@
-# level 2 -> level 3: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
-# cat spaces\ in\ this\ filename
-
-# level 3 -> level 4: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-find ~ -name ".*" -type f
-cd inhere
-ls -la ...Hiding-From-You
-cat ...Hiding-From-You
-
 # level 4 -> level 5: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 cd inhere
 find ./*
