@@ -102,3 +102,5 @@ cat data8 # Esta ya es la contraseña
 ssh -p 2220 -i ~/sshkey.private bandit14@bandit.labs.overthewire.org # Con el -i se identifica la clave privada
 cat /etc/bandit_pass/bandit14
 
+# level 14 -> level 15: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+echo MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS | nc 127.0.0.1 30000
