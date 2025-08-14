@@ -1,10 +1,3 @@
-# level 0 -> level 1: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
-cat readme
-
-# level 1 -> level 2: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-cat < -     # (El shell redirige stdin desde el fichero)
-cat ./-     # (Usa ruta explícita para evitar confusión)
-
 # level 2 -> level 3: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 # cat spaces\ in\ this\ filename
 
@@ -103,4 +96,15 @@ ssh -p 2220 -i ~/sshkey.private bandit14@bandit.labs.overthewire.org # Con el -i
 cat /etc/bandit_pass/bandit14
 
 # level 14 -> level 15: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+# Podemos comprobar con nmap que servicio está en el puerto 30000
+nmap -p 30000 localhost # El cual nos indica que el servicio que corre es ndmps (Protocolo de gestión de datos de red)
+telnet localhost 30000
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS # Con esto ya te dá la contraseña
+
+# Mi manera
 echo MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS | nc 127.0.0.1 30000
+echo MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS | nc localhost 30000
+
+# Otra forma de hacerlo
+nc localhost 30000
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS # Y con esto ya te dá la contraseña
