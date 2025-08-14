@@ -1,10 +1,4 @@
 
-# level 5 -> level 6: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
-find /home/bandit5/inhere/ -type f -size 1033c ! -executable -exec file '{}' \; | grep "ASCII text"
-# -exec -> Por cada fichero quen encuentre, ejecuta este comando
-# {} -> El fichero que encontró
-# \; -> Termina el exec
-
 # level 6 -> level 7: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 find / -user 11007 -group 11006 -size 33c | grep "password"
 find / -user bandit7 -group bandit6 -size 33c | grep "password"
