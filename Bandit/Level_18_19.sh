@@ -23,9 +23,9 @@
 # - Es un shell que se abre después de que el usuario haya iniciado sesión.
 # - Por ejemplo abrir otra terminal o ejecutar bash dentro de un shell que ya está abierto.
 
-# Tipo de shell         Interacción?                      Cuando se abre?
+# Tipo de shell         Interacción?                      Cuando se abre?                           Ficheros leídos normalmente
 
-# Login shell           Puede ser interactivo o no        Al iniciar sesión (consola, SSH)
-# Non-login shell       Puede ser interactivo o no        Al abrir otra terminal o ejecutar bash
-# Interactive shell     Sí                                Espera comandos del usuario
-# Non-interactive       No                                Scripts, cron, ejecución remota
+# Login shell           Puede ser interactivo o no        Al iniciar sesión (consola, SSH)          "/etc/profile", "~/.bash_profile", "~/.profile"
+# Non-login shell       Puede ser interactivo o no        Al abrir otra terminal o ejecutar bash    "~/.bashrc"
+# Interactive shell     Sí                                Espera comandos del usuario               Los que corresponda según sea login o no-login
+# Non-interactive       No                                Scripts, cron, ejecución remota           Normalmente nada salvo que se fuerce "source ~/.bashrc"
