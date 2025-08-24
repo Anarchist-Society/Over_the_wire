@@ -1,4 +1,4 @@
-# Level 18 -> Level 19: 
+# Level 18 -> Level 19:
 # La contraseña del bandit19 se encuentra almacenada en un readme, en el directorio home de bandit18.
 # El .bashrc ha sido modificado para iniciar sesión con SSH.
 
@@ -23,9 +23,9 @@
 # - Es un shell que se abre después de que el usuario haya iniciado sesión.
 # - Por ejemplo abrir otra terminal o ejecutar bash dentro de un shell que ya está abierto.
 
-# Tipo de shell     | Interacción?               | Cuando se abre?                        |
-# ------------------|----------------------------| ---------------------------------------|
-# Login shell       | Puede ser interactivo o no | Al iniciar sesión (consola, SSH)       |
-# Non-login shell   | Puede ser interactivo o no | Al abrir otra terminal o ejecutar bash |
-# Interactive shell | Sí                         | Espera comandos del usuario            |
-# Non-interactive   | No                         | Scripts, cron, ejecución remota        |
+# Tipo de shell         Interacción?                      Cuando se abre?
+
+# Login shell           Puede ser interactivo o no        Al iniciar sesión (consola, SSH)
+# Non-login shell       Puede ser interactivo o no        Al abrir otra terminal o ejecutar bash
+# Interactive shell     Sí                                Espera comandos del usuario
+# Non-interactive       No                                Scripts, cron, ejecución remota
