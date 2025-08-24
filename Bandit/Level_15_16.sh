@@ -21,8 +21,8 @@ openssl s_client -connect localhost:30001 < /etc/bandit_pass/bandit15 # Pero est
 # Este caracter podemos evitarlo con
 # -ign_eof -> ignora el EOF recibido en stdin y mantiene la conexión abierta
 # -quiet -> reduce la salida y evita imprimir cosas innecesarias
-openssl s_client -connect localhost:30001 -ign_eof < /etc/bandit_pass/bandit15 
-openssl s_client -connect localhost:30001 -quiet < /etc/bandit_pass/bandit15 
+openssl s_client -connect localhost:30001 -ign_eof < /etc/bandit_pass/bandit15
+openssl s_client -connect localhost:30001 -quiet < /etc/bandit_pass/bandit15
 
 # O con un cat
 cat /etc/bandit_pass/bandit15 | openssl s_client -connect localhost:30001 -ign_eof
