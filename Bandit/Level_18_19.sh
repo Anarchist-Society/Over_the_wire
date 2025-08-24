@@ -1,4 +1,4 @@
-# Level 18 -> Level 19:
+# Level 18 -> Level 19: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
 # La contraseña del bandit19 se encuentra almacenada en un readme, en el directorio home de bandit18.
 # El .bashrc ha sido modificado para iniciar sesión con SSH.
 
@@ -23,9 +23,7 @@
 # - Es un shell que se abre después de que el usuario haya iniciado sesión.
 # - Por ejemplo abrir otra terminal o ejecutar bash dentro de un shell que ya está abierto.
 
-# Tipo de shell         Interacción?                      Cuando se abre?                           Ficheros leídos normalmente
+# Como no podemos entrar directamente con ssh, ya que nos saco directamente, podemos ejecutar comandos con ssh sin entrar en el usuario
+ssh -p 2220 bandit18@bandit.labs.overthewire ls -la # Usamos esto para mostrar el contenido
 
-# Login shell           Puede ser interactivo o no        Al iniciar sesión (consola, SSH)          "/etc/profile", "~/.bash_profile", "~/.profile"
-# Non-login shell       Puede ser interactivo o no        Al abrir otra terminal o ejecutar bash    "~/.bashrc"
-# Interactive shell     Sí                                Espera comandos del usuario               Los que corresponda según sea login o no-login
-# Non-interactive       No                                Scripts, cron, ejecución remota           Normalmente nada salvo que se fuerce "source ~/.bashrc"
+ssh -p 2220 bandit18@bandit.labs.overthewire cat readme
