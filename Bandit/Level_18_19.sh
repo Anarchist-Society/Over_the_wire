@@ -36,5 +36,4 @@ ssh -p 2220 bandit18@bandit.labs.overthewire.org /bin/bash # Aquí le estamos di
 
 ssh -p 2220 bandit18@bandit.labs.overthewire.org -t /bin/sh # con -t forzamos a ssh a usar una pseudoterminal
 
-
 ssh -p 2220 -T bandit18@bandit.labs.overthewire.org
