@@ -24,6 +24,17 @@
 # - Por ejemplo abrir otra terminal o ejecutar bash dentro de un shell que ya está abierto.
 
 # Como no podemos entrar directamente con ssh, ya que nos saco directamente, podemos ejecutar comandos con ssh sin entrar en el usuario
-ssh -p 2220 bandit18@bandit.labs.overthewire ls -la # Usamos esto para mostrar el contenido
+ssh -p 2220 bandit18@bandit.labs.overthewire.org ls -la # Usamos esto para mostrar el contenido
 
-ssh -p 2220 bandit18@bandit.labs.overthewire cat readme
+ssh -p 2220 bandit18@bandit.labs.overthewire.org cat readme # Con esto ya leemos el readme y podemos ver la contraseña de bandit19
+
+# Otra forma de hacerlo es con:
+ssh -l bandit18 -p 2220 bandit.labs.overthewire.org cat readme # Con -l le decimos a ssh el usuario
+
+# Otra forma de hacerlo es con:
+ssh -p 2220 bandit18@bandit.labs.overthewire.org /bin/bash # Aquí le estamos diciendo a ssh que ejecute el programa /bin/bash en lugar del shell de inicio de sesión normal
+
+ssh -p 2220 bandit18@bandit.labs.overthewire.org -t /bin/sh # con -t forzamos a ssh a usar una pseudoterminal
+
+
+ssh -p 2220 -T bandit18@bandit.labs.overthewire.org
