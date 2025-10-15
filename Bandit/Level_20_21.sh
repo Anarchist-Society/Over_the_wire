@@ -1,4 +1,4 @@
-# Level 20 -> Level 21: 
+# Level 20 -> Level 21: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
 # Nos dicen que hay un binario setuid en el home de bandit20.
 # Este binario hace una conexión a localhost en el puerto que se especifica como argumento. 
 # Para que nos de la contraseña del bandit21 tenemos que pasarle la contraseña del bandit20
