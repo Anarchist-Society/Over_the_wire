@@ -1,5 +1,5 @@
 # Level 21 -> Level 22: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
-# Nos dice que un programa se ejecuta automáticamente en intervalos regulares desde cron.
+# Nos dice que un programa se ejecuta automáticamente en intervalos regulares desde cron, el programador de trabajos basado en el tiempo.
 # También nos dice que busquemos en /etc/cron.d/ la configuración y vea qué comando se está ejecutando.
 # Si hacemos mostramos el contenido de /etc/cron.d/, la salida será algo como esta:
 
