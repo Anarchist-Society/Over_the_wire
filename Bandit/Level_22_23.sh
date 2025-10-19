@@ -1,5 +1,8 @@
 # Level 22 -> Level 23: 8ca319486bfbbc3663ea0fbe81326349
 # Nos dice que un programa se ejecuta automáticamente en intervalos regulares desde cron, el programador de trabajos basado en el tiempo.
+
+# Nota: Mirar scripts de shell escritos por otras personas es una habilidad muy útil. El guión de este nivel se ha hecho intencionadamente fácil de leer. Si tiene problemas para entender lo que hace, intente ejecutarlo para ver la información de depuración que imprime.
+
 # También nos dice que busquemos en /etc/cron.d/ la configuración y vea qué comando se está ejecutando.
 ls -l /etc/cron.d/
 
@@ -44,7 +47,7 @@ cat /etc/bandit_pass/$myname > /tmp/$mytarget
 echo I am user bandit23 | md5sum | cut -d ' ' -f 1
 
 # Salida:
-# 8ca319486bfbbc3663ea0fbe81326349
+# 8ca319486bfbbc3663ea0fbe81326349 -> Con esto ya podemos recuperar el contenido de mytarget que es donde se ha copiado la contraseña de Bandit23
 
 # Ahora hacemos un mostramos el contenido en el fichero donde se ha copiado la contraseña de bandit23:
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349 # Y eso ya nos devuelve la contaseña
