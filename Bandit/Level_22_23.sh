@@ -1,7 +1,7 @@
 # Level 22 -> Level 23: 8ca319486bfbbc3663ea0fbe81326349
 # Nos dice que un programa se ejecuta automáticamente en intervalos regulares desde cron, el programador de trabajos basado en el tiempo.
 
-# Nota: Mirar scripts de shell escritos por otras personas es una habilidad muy útil. El guión de este nivel se ha hecho intencionadamente fácil de leer. Si tiene problemas para entender lo que hace, intente ejecutarlo para ver la información de depuración que imprime.
+# NOTA: Mirar scripts de shell escritos por otras personas es una habilidad muy útil. El guión de este nivel se ha hecho intencionadamente fácil de leer. Si tiene problemas para entender lo que hace, intente ejecutarlo para ver la información de depuración que imprime.
 
 # También nos dice que busquemos en /etc/cron.d/ la configuración y vea qué comando se está ejecutando.
 ls -l /etc/cron.d/
