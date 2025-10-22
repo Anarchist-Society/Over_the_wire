@@ -1,4 +1,4 @@
-# Level 22 -> Level 23: 8ca319486bfbbc3663ea0fbe81326349
+# Level 22 -> Level 23: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
 # Nos dice que un programa se ejecuta automáticamente en intervalos regulares desde cron, el programador de trabajos basado en el tiempo.
 
 # NOTA: Mirar scripts de shell escritos por otras personas es una habilidad muy útil. El guión de este nivel se ha hecho intencionadamente fácil de leer. Si tiene problemas para entender lo que hace, intente ejecutarlo para ver la información de depuración que imprime.
@@ -21,7 +21,7 @@ ls -l /etc/cron.d/
 
 # Podemos ver que tenemos un fichero llamado cronjob_bandit23 con los permisos suficientes para poder leerlo:
 cat /etc/cron.d/cronjob_bandit23
-#
+
 # Salida:
 # @reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
 # * * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
